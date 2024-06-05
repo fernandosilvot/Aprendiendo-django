@@ -30,7 +30,7 @@ def registro(request):
         user = User.objects.create_user(username=us, email=correo, password=contrasenia)
         
         UserProfile.objects.create(user=user, role=role)
-        return redirect('')
+        return redirect('inicio')
         # Resto de tu lógica aquí (redireccionar, etc.)
 
     return render(request, 'auth/registro.html')

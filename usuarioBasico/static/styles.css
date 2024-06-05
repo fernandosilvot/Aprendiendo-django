@@ -1,0 +1,113 @@
+body{
+    background-color: #F5EAEC;
+}
+/* narbar */
+.navbar{
+    background-color: #521412;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    margin-left: 50px;
+}
+
+/* no cambia de color */
+.boton_img_usuario{
+    color: #F5EAEC;
+}
+
+.nombre_menu{
+    color: #F5EAEC;
+    margin-left: 100%;
+    margin-top: 37px;
+}
+
+.boton_img_usuario{
+    height: 50px;
+    width: 50px;
+    margin-left: 650px;
+    margin-top: 20px;
+}
+
+.boton_img_carrito{
+    height: 50px;
+    width: 50px;
+    margin-left: 650px;
+    margin-top: 20px;
+}
+
+/* primer div */
+.primer_div{
+    height: 600px;
+    background-color: #752836;
+}
+
+.plato_dia{
+    height: 450px;
+    width: 450px;
+    margin-top: 80px;
+    margin-left: 100px;
+    border-radius: 40px;
+}
+
+.plato_dia_text{
+    margin-left: 350px;
+    margin-top: 250px;
+}
+
+.plato_d_text, .plato_dia_p{
+    color: #F5EAEC;
+}
+.plato_dia_p, .plato_d_text, .plato_dia_text{
+    text-align: center;
+}
+.corchete{
+    height: 300px;
+    margin-top: 150px;
+}
+
+/* segundo div */
+.segundo_div{
+    padding-top: 50px;
+    background-color: #F5EAEC;
+}
+
+/* primer carrusel index */
+.vendido-text, .review-text{
+    text-align: center;
+    padding-bottom: 15px;
+}
+/* .card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    padding: 3px;
+}
+.card-image .carne-salteada{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.slide-conteiner{
+    max-width: 1120px;
+    width: 100%;
+    background-color: rgb(140, 137, 137);
+    padding: 40px 0;
+    
+} */
+
+/* .carousel-inner{
+    border-radius: 10px;
+} */
+
+.carne-salteada{
+    height: 200px;
+    width: 200px;
+    align-items: center;
+}
+.carne-s2{
+    background-color: #F5EAEC;
+}

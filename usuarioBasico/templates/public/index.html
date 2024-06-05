@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block styles %} 
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+{% endblock %}
+
+{% block title%}Alimentos Santiago{% endblock %}
+
+{% block content %} 
+    <div class="primer_div">
+        <div class="row">
+            <div class="col-5">
+                <div class="plato_dia_text">
+                    <h2 class="plato_d_text">Plato del día</h3>
+                    <p class="plato_dia_p">Pastel de papa casero</p>
+                    <button class="plato_dia_bt">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+            <div class="col-1">
+                <img class="corchete" src="{% static 'img/curly-parentheses-.png' %}" alt="Corchete">
+            </div>
+            <div class="col-6" class="">
+                <img class="plato_dia" src="{% static 'img/cooking-at-home-1.jpg' %}" alt="Plato del día">
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="segundo_div">
+        <div class="row">
+            <div>
+                <h5 class="vendido-text">Lo más vendido</h5>
+            </div>
+            <div>
+                <div class="slide-conteiner">
+                    <div class="slide-content">
+                        <div class="card-wrapper">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                
+                                <div class="card-image">
+                                    <img class="carne-salteada" src="{% static 'img/estofado-de-cerdo-1-1140x760.png' %}" alt="carne-salteada">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h5 class="nombre-plato">Carne salteada</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="review-text">Lo que dicen nuestros clientes</h5>
+            </div>
+        </div> 
+     </div> -->
+    <div class="container segundo_div" id="CCO">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <!-- CARUUSEL -->
+                <div class="lo-mas-vendido">
+                    <h5 class="vendido-text">Lo más vendido</h5>
+                </div>
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner carne-s">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-2"></div>
+                                <div class="col-3">
+                                    <div class="card carne-s2">
+                                        <img class="carne-salteada" src="{% static 'img/estofado-de-cerdo-1-1140x760.png' %}" alt="carne-salteada">
+                                        <div class="card-body">
+                                            <h5 class="card-title" style="color:black">Almuerzo tal</h5>
+                                            <p class="card-text">This.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card carne-s2">
+                                        <img class="carne-salteada" src="{% static 'img/estofado-de-cerdo-1-1140x760.png' %}" alt="carne-salteada">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Almuerzo tal</h5>
+                                            <p class="card-text">This.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card carne-s2">
+                                        <img class="carne-salteada" src="{% static 'img/estofado-de-cerdo-1-1140x760.png' %}" alt="carne-salteada">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Almuerzo tal</h5>
+                                            <p class="card-text">This.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
+                        </div>
+                        <!-- <div class="carousel-item">
+            
+                            <div class="row row-cols-1 row-cols-md-2 g-4">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Almuerzo tal</h5>
+                                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Almuerzo tal</h5>
+                                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+            
+                            <div class="row row-cols-1 row-cols-md-2 g-4">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Almuerzo tal</h5>
+                                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Almuerzo tal</h5>
+                                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div> <!--div col-->
+            </div> <!--div row-->
+        </div> <!--div container-->
+    </div>
+{% endblock %}
